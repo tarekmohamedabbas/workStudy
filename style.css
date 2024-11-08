@@ -1,0 +1,331 @@
+  /* إعدادات شريط التنقل */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;  /* جعل النص من اليمين لليسار */
+    background-color: #ecf0f1;  /* لون خلفية هادئ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* خط عام مناسب */
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;  /* مسافة أعلى تساوي ارتفاع الشريط العلوي */
+  }
+
+  /* ! navbar */
+  /* تنسيق الشريط العلوي (Navbar) */
+  header nav {
+    position: fixed;  /* تثبيت الشريط العلوي في مكانه */
+    top: 0;            /* وضعه في الجزء العلوي من الصفحة */
+    left: 0;           /* جعله يبدأ من الجهة اليسرى */
+    width: 100%;       /* جعله يمتد عبر العرض الكامل للصفحة */
+    background-color: #333;  /* تحديد لون الخلفية */
+    z-index: 1000;     /* جعل الشريط في الأمام */
+    padding: 10px 0;   /* إضافة padding أعلى وأسفل */
+  }
+  
+  .navbar {
+    list-style: none;  /* إزالة النقاط من القائمة */
+    margin: 0;          /* إزالة الهامش الافتراضي */
+    padding: 0;         /* إزالة الحشو الافتراضي */
+    text-align: center; /* جعل النص في المنتصف */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    display: inline-block; /* عرض العناصر في نفس السطر */
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: white;        /* تحديد لون النص */
+    text-decoration: none; /* إزالة الخط تحت النص */
+    padding: 10px 20px;   /* إضافة padding حول النص */
+    font-size: 18px;      /* تحديد حجم الخط */
+    display: inline-block; /* جعل الروابط تظهر بجانب بعضها */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #575757; /* تغيير لون الخلفية عند التمرير */
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* تصميم شريط التنقل */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  /* إضافة تأثير للانتقال */
+  .navbar a:active {
+    background-color: #45a049;
+  }
+  
+  /* ******************************************************************* */
+  /*! profile-container */
+  /* تنسيق الـ h1 */
+  h1 {
+    font-family: 'Arial', sans-serif;  /* الخط الأساسي */
+    font-size: 36px;                  /* حجم الخط */
+    font-weight: bold;                /* جعل الخط عريض */
+    color: #2c3e50;                   /* لون النص */
+    text-align: center;               /* توسيط النص */
+    margin-bottom: 10px;              /* مسافة أسفل العنوان */
+  }
+  
+  /* تنسيق الـ h6 */
+  h6 {
+    font-family: 'Verdana', sans-serif;  /* اختيار خط مختلف */
+    font-size: 16px;                     /* حجم الخط */
+    color: #7f8c8d;                      /* لون النص (أخف من h1) */
+    text-align: center;                  /* توسيط النص */
+    line-height: 1.5;                    /* زيادة التباعد بين الأسطر */
+    margin-top: 0;                       /* إزالة المسافة العلوية */
+  }
+  
+  /* تنسيق الـ container العام */
+  #profile-container {
+    display: flex;                     /* استخدام Flexbox لترتيب العناصر أفقيًا */
+    align-items: center;               /* محاذاة العناصر عموديًا */
+    justify-content: space-between;    /* توزيع العناصر بحيث يكون بينهما مسافة */
+    padding: 40px 20px;                /* إضافة padding داخلي للمسافة بين العناصر */
+    background-color: #f4f4f4;         /* تحديد لون الخلفية */
+    border-radius: 15px;               /* إضافة حواف دائرية للـ container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول الـ container */
+    max-width: 1200px;                 /* تحديد الحد الأقصى للعرض */
+    margin: auto;                      /* توسيط الـ container */
+  }
+  
+  /* تنسيق النص داخل الـ text-container */
+  .text-container {
+    max-width: 50%;                    /* تحديد أقصى عرض للنص */
+    padding-right: 20px;               /* إضافة مسافة على اليمين */
+  }
+  
+  /* تنسيق عنوان h1 */
+  #profile-container h1 {
+    font-size: 36px;                   /* حجم الخط */
+    font-weight: bold;                 /* جعل الخط عريض */
+    color: #333;                       /* تحديد لون الخط */
+    margin-bottom: 10px;               /* مسافة أسفل العنوان */
+    font-family: 'Arial', sans-serif;  /* تحديد خط واضح */
+  }
+  
+  /* تنسيق الـ h6 */
+  #profile-container h6 {
+    font-size: 18px;                   /* حجم الخط */
+    color: #666;                       /* تحديد لون النص */
+    line-height: 1.6;                  /* تحسين المسافة بين السطور */
+    font-family: 'Arial', sans-serif;  /* تحديد خط واضح */
+  }
+  
+  /* تنسيق الصورة */
+  .profile-image {
+    width: 250px;                      /* تحديد عرض الصورة */
+    height: 250px;                     /* تحديد ارتفاع الصورة */
+    object-fit: cover;                 /* الحفاظ على نسبة العرض والارتفاع */
+    border-radius: 50%;                /* جعل الصورة دائرية */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.755); /* إضافة ظل حول الصورة */
+  }
+  /* تحسين التفاعل عند التمرير على الصورة */
+  .profile-image:hover {
+    transform: scale(1.05);            /* تكبير الصورة عند التمرير عليها */
+    transition: transform 0.3s ease;   /* إضافة تأثير التمرير */ 
+  }
+  
+  /* ! images */
+  /* تنسيق الـ container */
+  #images,#progects {
+    margin: 40px auto;               /* إضافة مسافة حول الـ div */
+    padding: 20px;                    /* إضافة padding داخل الـ div */
+    text-align: center;               /* توسيط النص داخل الـ div */
+    background-color: #f4f4f4;        /* خلفية خفيفة */
+    border-radius: 10px;              /* إضافة زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.767); /* إضافة ظل خفيف حول الـ div */
+    width: 80%;                       /* تحديد عرض الـ div */
+    max-width: 1200px;                /* تحديد الحد الأقصى للعرض */
+  }
+  
+  /* تنسيق العنوان h2 */
+  #images h2 {
+    font-size: 24px;                  /* حجم الخط */
+    font-weight: bold;                /* جعل الخط عريض */
+    color: #333;                      /* لون الخط */
+    margin-bottom: 20px;              /* مسافة أسفل العنوان */
+    font-family: 'Arial', sans-serif; /* تحديد خط واضح */
+  }
+  
+  /* تنسيق المعرض (image-gallery) والكاتيجوري الجديد (new-category-gallery) */
+  .image-gallery, .new-category-gallery {
+    display: flex;                    /* استخدام Flexbox لترتيب الصور */
+    flex-wrap: wrap;                   /* السماح للصور بالتوزيع على أكثر من سطر */
+    gap: 15px;                         /* إضافة مسافة بين الصور */
+    justify-content: center;           /* توسيط الصور أفقيًا */
+}
+
+/* تنسيق كل صورة في المعرض والكاتيجوري */
+.image-gallery img, .new-category-gallery img {
+    width: 200px;                     /* تحديد عرض الصورة */
+    height: 200px;                    /* تحديد ارتفاع الصورة */
+    object-fit: cover;                /* التأكد من أن الصورة تغطي المساحة المحددة */
+    border-radius: 8px;               /* إضافة زوايا دائرية للصورة */
+    transition: transform 0.3s ease;  /* إضافة تأثير عند التمرير على الصورة */
+    cursor: pointer;                  /* تغيير شكل المؤشر عند التمرير */
+}
+
+/* تأثير عند التمرير على الصورة */
+.image-gallery img:hover, .new-category-gallery img:hover {
+    transform: scale(1.05);           /* تكبير الصورة عند التمرير عليها */
+}
+
+/* تحسين التفاعل عند التمرير على الصورة */
+.image-gallery img, .new-category-gallery img {
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover, .new-category-gallery img:hover {
+    transform: scale(1.05);            /* تكبير الصورة عند التمرير عليها */
+}
+
+  
+  /* ******************************************************************* */
+  
+  /* تغيير حجم الخط على شريط التنقل */
+  @media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 16px;
+    }
+  
+    /* تغيير ترتيب العناصر عند شاشات صغيرة */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .navbar li {
+        margin-bottom: 10px;
+    }
+  }
+  
+  /* تنسيق الصورة لتكون بنفس الحجم */
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  /* نافذة العرض الكبير (modal) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* أزرار التحكم في الصورة */
+  #controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #controls button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #controls button:hover {
+    background-color: #45a049;
+  }
+  
+  /* تنسيق الأزرار الخاصة بالتحكم في الصورة */
+  #controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #controls button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #controls button:hover {
+    background-color: #45a049;
+  }
+  
+  #controls button:focus {
+    outline: none;
+  }
+  #controls button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #controls button:hover {
+    background-color: #45a049;
+  }
+  
+  /* تنسيق زر "إغلاق الصورة" */
+  #close-image {
+    background-color: #f44336; /* لون الخلفية أحمر */
+  }
+  
+  #close-image:hover {
+    background-color: #e53935; /* لون الخلفية عند التمرير */
+  }
+  
